@@ -1,0 +1,107 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    overflow: hidden;
+}
+
+body{
+    background: url(./images/background.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;    
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem;
+}
+nav h3{
+    margin-left: .4rem;
+    color: #fff;
+    font-size: 22px;
+}
+.box-bottom{
+margin-top: 32em;    
+}
+nav div{
+    cursor: pointer;
+}
+.container{
+    padding: 1.5rem; 
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-between;
+}
+.container::before {
+    content: "";
+    background: rgba(231, 190, 25, 0.8);
+    right: -65vw;
+    width: 100vw;
+    height: 100vh;
+    transform: skewX(-12deg);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+.read{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 300; 
+}
+.read img{
+    margin-left: .5rem;
+}
+
+.main-container h1{
+    font-size: 7rem;
+    font-weight: 400;
+}
+.main-container p{
+    font-size: 3rem;
+    margin-top: -5px;
+    width: 30vw; 
+    font-weight: 500;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.footer img{
+    margin-right: .6rem;
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        position: ;
+        top: 0;
+        height: 100vh;
+    }
+
+    .container::before {
+        top: 5vh;
+        right: -45vh;
+        height: 95vh;
+        width: 95vh;
+        transform: skewY(0) rotate(45deg);
+    }
+
+    .top{
+       font-weight: 500;
+     
+    }
+
+    .footer h3 {
+        margin-top: 0;
+    }
+    .box-bottom{
+        margin-top: 45rem;
+    }
+}
+
